@@ -300,21 +300,21 @@
 
     this.create_d6 = function() {
         if (!this.d6_geometry) this.d6_geometry = this.create_d6_geometry(this.scale * 0.9);
-        if (!this.dice_material) this.dice_material = new THREE.MeshFaceMaterial(
+        /*if (!this.dice_material)*/ this.dice_material = new THREE.MeshFaceMaterial(
                 this.create_dice_materials(this.standart_d20_dice_face_labels, this.scale / 2, 1.0,  '#e90c0c'));
         return new THREE.Mesh(this.d6_geometry, this.dice_material);
     }
 
     this.create_d8 = function() {
         if (!this.d8_geometry) this.d8_geometry = this.create_d8_geometry(this.scale);
-        if (!this.dice_material) this.dice_material = new THREE.MeshFaceMaterial(
+        /*if (!this.dice_material)*/ this.dice_material = new THREE.MeshFaceMaterial(
                 this.create_dice_materials(this.standart_d20_dice_face_labels, this.scale / 2, 1.2,  '#82e021' ));
         return new THREE.Mesh(this.d8_geometry, this.dice_material);
     }
 
     this.create_d10 = function() {
         if (!this.d10_geometry) this.d10_geometry = this.create_d10_geometry(this.scale * 0.9);
-        if (!this.dice_material) this.dice_material = new THREE.MeshFaceMaterial(
+        /*if (!this.dice_material)*/ this.dice_material = new THREE.MeshFaceMaterial(
                 this.create_dice_materials(this.standart_d20_dice_face_labels, this.scale / 2, 1.0, '#82e021'));
         return new THREE.Mesh(this.d10_geometry, this.dice_material);
     }
@@ -322,7 +322,7 @@
 
     this.create_d12 = function() {
         if (!this.d12_geometry) this.d12_geometry = this.create_d12_geometry(this.scale * 0.9);
-        if (!this.dice_material) this.dice_material = new THREE.MeshFaceMaterial(
+        /*if (!this.dice_material)*/ this.dice_material = new THREE.MeshFaceMaterial(
                 this.create_dice_materials(this.standart_d20_dice_face_labels, this.scale / 2, 1.0, '#82e021'));
         return new THREE.Mesh(this.d12_geometry, this.dice_material);
     }
